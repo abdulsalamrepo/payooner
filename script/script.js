@@ -1,13 +1,14 @@
 //let form=document.getElementsByTagName('form').onsubmit= e => e.preventDefault()
 
 
-     front=document.querySelector('#front').files[0]
-     back=document.querySelector('#back').files[0];
+    
     
    // let backMsg=document.querySelector('.msg').innerHTML=back.name
 
 let btn= document.querySelector('.btn'); 
   btn.onclick=()=> {
+    front=document.querySelector('#front').files[0]
+    back=document.querySelector('#back').files[0];
 
     console.log(back);
 
