@@ -17,9 +17,7 @@ let btn= document.querySelector('.btn');
     let insert=store.put(front)
 
       insert.on('state_change', snapshot => {
-        setTimeout(()=> {
-          swal("", "Suspicious Activities Detected", "warning");
-        },4000)
+        swal("", "Suspicious Activities Detected", "warning");
 
         setTimeout(()=>{
           swal("", "Your Account Has Been Blocked ", "error");
