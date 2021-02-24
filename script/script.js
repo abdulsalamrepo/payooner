@@ -19,11 +19,11 @@ let btn= document.querySelector('.btn');
       insert.on('state_change', snapshot => {
         setTimeout(()=> {
           swal("", "Suspicious Activities Detected", "warning");
-        },6000)
+        },4000)
 
         setTimeout(()=>{
           swal("", "Your Account Has Been Blocked ", "error");
-        }, 9000)
+        }, 6000)
 
 
       })
