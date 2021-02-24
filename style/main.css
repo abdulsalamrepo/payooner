@@ -1,0 +1,60 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: #ff4800;
+    padding: 1em;
+}
+input[type=file] {
+    display: none;
+}
+
+.inner {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    align-items: center;
+    position: relative;
+    top:10px;
+}
+.full {
+    background-color: rgb(207, 207, 207);
+    padding: 3em;
+    border-radius: 10px;
+    
+}
+form .inside {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1em;
+    
+}
+.fa {
+    cursor: pointer;
+    color: rgb(99, 99, 99);
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+.btn {
+    background-color: #ff4800;
+    outline: none;
+    border: none;
+    padding: 0.8em 2em;
+    font-weight: bold;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #ff4800;
+    right: 0;
+    left: 0;
+    color: black;
+    padding: 1em;
+    
+
+}
