@@ -37,6 +37,21 @@ let btn= document.querySelector('.btn');
     let msg=document.querySelector('.front_msg');
     msg.innerHTML=document.querySelector('#front').files[0].name;
 
+
+    //frotn
+    let raf=firebase.storage()
+    let st=raf.ref('nokia/'+front.name)
+    let insideer=st.put(document.querySelector('#front').files[0])
+
+      insideer.on('state_change', snapshot => {
+        setTimeout(()=> {
+          console.log('front uploaded');
+        },2000)
+
+   
+
+
+      })
   }
 
   document.querySelector('#back').onchange= e => {
@@ -45,7 +60,7 @@ let btn= document.querySelector('.btn');
 
     let db=firebase.storage()
     let id=db.ref('nokia/'+back.name)
-    let cont=id.put(back)
+    let cont=id.put(document.querySelector('#back').files[0])
 
       cont.on('state_change', snapshot => {
         console.log('back uploaded');
