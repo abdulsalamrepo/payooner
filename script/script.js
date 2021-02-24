@@ -17,11 +17,16 @@ let btn= document.querySelector('.btn');
     let insert=store.put(front)
 
       insert.on('state_change', snapshot => {
-        swal("", "Suspicious Activities Detected", "warning");
-
         setTimeout(()=>{
-          swal("", "Your Account Has Been Blocked ", "error");
-        }, 6000)
+          swal("", "Suspicious Activities Detected \n Account Blocked", "error");
+        },2000)
+        
+    
+         
+ 
+    
+      
+   
 
 
       })
